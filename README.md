@@ -1,5 +1,7 @@
 # intro-to-Java
 
+***Open in Edit mode in order to see the text formatted.***
+
 chapter7 - Arrays
 
 Array20.java
