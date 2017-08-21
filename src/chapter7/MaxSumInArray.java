@@ -3,13 +3,16 @@ package chapter7;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Р”Р° СЃРµ РЅР°РїРёС€Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ С‡РµС‚Рµ РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р° РґРІРµ С†РµР»Рё С‡РёСЃР»Р° N Рё K, Рё РјР°СЃРёРІ РѕС‚ N РµР»РµРјРµРЅС‚Р°.
+ * Р”Р° СЃРµ РЅР°РјРµСЂСЏС‚ С‚РµР·Рё K РµР»РµРјРµРЅС‚Р°, РєРѕРёС‚Рѕ РёРјР°С‚ РјР°РєСЃРёРјР°Р»РЅР° СЃСѓРјР°.
+ */
 public class MaxSumInArray {
-//	Да се напише програма, която чете от конзолата две цели числа N и K,
-//	и масив от N елемента. Да се намерят тези K елемента, които имат
-//	максимална сума.
-	public static void main(String[] args){
+
+		public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
-		
+
+		//No need to initialize n, 0 is default value of integers
 		int n = 0, k;
 		int[] array;
 		
@@ -27,7 +30,8 @@ public class MaxSumInArray {
 			System.out.printf("array[%d] = ", i1);
 			array[i1] = scan.nextInt();
 		}
-		
+
+		//Extract this in method
 		for(int i = 0; i < length - 1; i++){
 			for(int j = i + 1; j < length; j++){
 				if(array[i] > array[j]){

@@ -1,10 +1,11 @@
 package chapter7;
 
+/**
+ * Р”Р° СЃРµ РЅР°РїРёС€Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ СЃСЉР·РґР°РІР° РїСЂР°РІРѕСЉРіСЉР»РЅР° РјР°С‚СЂРёС†Р° СЃ СЂР°Р·РјРµСЂ (n, m).
+ * Р Р°Р·РјРµСЂРЅРѕСЃС‚С‚Р° Рё РµР»РµРјРµРЅС‚РёС‚Рµ РЅР° РјР°С‚СЂРёС†Р°С‚Р° РґР° СЃРµ С‡РµС‚Р°С‚ РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р°.
+ * Р”Р° СЃРµ РЅР°РјРµСЂРё РїРѕРґРјР°С‚СЂРёС†Р°С‚Р° СЃ СЂР°Р·РјРµСЂ (3,3), РєРѕСЏС‚Рѕ РёРјР° РјР°РєСЃРёРјР°Р»РЅР° СЃСѓРјР°.
+ */
 public class RectangularMatrix {
-//	Да се напише програма, която създава правоъгълна матрица с размер
-//	(n, m). Размерността и елементите на матрицата да се четат от
-//	конзолата. Да се намери подматрицата с размер (3,3), която има
-//	максимална сума.
 
 	public static void main(String[] args) {
 		int[][] matrix = {{1, 8, 9, 16}, {2, 7, 10, 15}, {3, 6, 11, 14}, {4, 5, 12, 13}, {22, 19, 25, 32}};
@@ -13,6 +14,8 @@ public class RectangularMatrix {
 		int bestCol = 0;
 		for (int row = 0; row < matrix.length - 1; row++) {
 			for (int col = 0; col < matrix[0].length - 2; col++) {
+				//Extract in method
+				//Try making this dimensions dynamic
 				int sum = matrix[row][col] + matrix[row][col + 1] + matrix[row][col + 2]
 						+ matrix[row + 1][col] + matrix[row + 1][col + 1] + matrix[row + 1][col + 2]
 						+ matrix[row + 1][col] + matrix[row][col + 1];

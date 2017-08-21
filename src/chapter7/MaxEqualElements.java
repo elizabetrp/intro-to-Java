@@ -2,18 +2,23 @@ package chapter7;
 
 import java.util.Arrays;
 
+/**
+ * ÐÐ°Ð¿Ð¸ÑˆÐµÑ‚Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð°, ÐºÐ¾ÑÑ‚Ð¾ Ð½Ð°Ð¼Ð¸Ñ€Ð° Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»Ð½Ð°Ñ‚Ð° Ñ€ÐµÐ´Ð¸Ñ†Ð° Ð¾Ñ‚ ÐµÐ´Ð½Ð°ÐºÐ²Ð¸
+ * ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¸ Ð² Ð¼Ð°ÑÐ¸Ð². ÐŸÑ€Ð¸Ð¼ÐµÑ€: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} -> {2, 2, 2}
+ */
 public class MaxEqualElements {
-//	Íàïèøåòå ïðîãðàìà, êîÿòî íàìèðà ìàêñèìàëíàòà ðåäèöà îò åäíàêâè
-//	åëåìåíòè â ìàñèâ. Ïðèìåð: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} -> {2, 2, 2}.
-	
+
 	public static void main(String[] args){
-		int[] numbers = {1, 2, 2, 3, 4, 5, 2, 2, 2, 1};
+		// I changed it
+		int[] numbers = {1, 2, 2, 3, 4, 5, 2, 2, 2, 2};
         int length = numbers.length;
         int max = 0;
         int count = 0;
         int[] temp = new int[length];
-        
+
         for (int i = 0; i < length - 1; i++){
+        	//This breaks the program when the repeatable symbol is in the end of the array (execute it)
+            // I think you don't need if and while here
         	if(numbers[i] == numbers[i + 1]){
         		count = 1;
         		while(numbers[i] == numbers[i + 1]){
@@ -23,6 +28,7 @@ public class MaxEqualElements {
         		if(count > max){
         			max = count;
         			while(count != 0){
+        			    //Try without showing leading 0-s
         				temp[count--] = numbers[i];
         			}
         		}
