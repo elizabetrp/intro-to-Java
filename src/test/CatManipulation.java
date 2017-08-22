@@ -1,5 +1,8 @@
 package test;
 
+import test.Cat;
+import test.Sequence;
+
 public class CatManipulation {
 	
 //	Напишете програма, която създава 10 обекта от тип Cat, дава им имена
@@ -10,10 +13,13 @@ public class CatManipulation {
 //	Не е завършена.
 	
 	public static void main(String[] args){
-		for(int i = 1; i < 11; i++){
-			Cat Cat = new Cat();
-			Cat.name = "Cat" + i;
-			Cat.sayMiau();
+		Cat[] array = new Cat[10];
+		for(int i = 0; i < 10; i++){
+			array[i] = new Cat("Cat" + Sequence.nextValue(), "brown");
+		}
+		
+		for (Object Cat : array){
+			((test.Cat) Cat).sayMiau();
 		}
 	}
 }

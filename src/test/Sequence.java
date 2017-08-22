@@ -2,12 +2,12 @@ package test;
 
 public class Sequence {
 	
-	private static int currentValue = -1;
+	private static int currentValue = 0;
 	
 	public Sequence() {
 	}
 	
-	public int nextValue() {
+	public static int nextValue() {
 		currentValue++;
 		return currentValue;
 	}
