@@ -7,6 +7,8 @@ public class CatManipulation {
 //	извиква метода sayMiau() на всеки от тях. За реализацията използвайте
 //	вече дефинирания пакет chapter10 (test).
 	
+//	Не е завършена.
+	
 	public static void main(String[] args){
 		for(int i = 1; i < 11; i++){
 			Cat Cat = new Cat();
