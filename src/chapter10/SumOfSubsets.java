@@ -27,13 +27,15 @@ public class SumOfSubsets {
         return subset[sum][n];
     }
 
-//	Даден е масив с цели числа. Напишете програма, която проверява дали
-//	в масива съществуват едно или повече числа, чиято сума е N.
+//	Р”Р°РґРµРЅ Рµ РјР°СЃРёРІ СЃ С†РµР»Рё С‡РёСЃР»Р°. РќР°РїРёС€РµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РїСЂРѕРІРµСЂСЏРІР° РґР°Р»Рё
+//	РІ РјР°СЃРёРІР° СЃСЉС‰РµСЃС‚РІСѓРІР°С‚ РµРґРЅРѕ РёР»Рё РїРѕРІРµС‡Рµ С‡РёСЃР»Р°, С‡РёСЏС‚Рѕ СЃСѓРјР° Рµ N.
 
 	
     public static void main(String[] args){
     	Scanner scan = new Scanner(System.in);
-    	
+
+    	//You can extract all reading in separate class and use it everywhere.
+        // You can have different methods there for reading different stuff
         System.out.print("Enter array length: ");
         int length = scan.nextInt();
         scan.nextLine();

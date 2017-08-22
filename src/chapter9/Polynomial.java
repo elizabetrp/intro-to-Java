@@ -2,6 +2,7 @@ package chapter9;
 
 public class Polynomial {
 	public static void multiplyPolynomials(){
+	    //Do not hardcode values in methods
 		double[] arr1 = {5, 2, 3, -1, 2};
 		double[] arr2 = {2, -1, 4, 4};
 		double multiplier;
@@ -20,9 +21,10 @@ public class Polynomial {
 		}
 	}
 	
-//	Напишете метод, който умножава два многочлена.
+//	РќР°РїРёС€РµС‚Рµ РјРµС‚РѕРґ, РєРѕР№С‚Рѕ СѓРјРЅРѕР¶Р°РІР° РґРІР° РјРЅРѕРіРѕС‡Р»РµРЅР°.
 	
 	public static void main(String[] args){
+	    //You should pass the arrays here
 		multiplyPolynomials();
 	}
 }

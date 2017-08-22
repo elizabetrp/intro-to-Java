@@ -5,14 +5,14 @@ public class MergeSort {
     private int[] tempMergArr;
     private int length;
  
-//    Напишете програма, която сортира целочислен масив по алгоритъма
-//    "merge sort".
+
     public static void main(String a[]){
          
         int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
         MergeSort ms = new MergeSort();
         ms.sort(inputArr);
         for(int i:inputArr){
+            //you can do this in one line
             System.out.print(i);
             System.out.print(" ");
         }

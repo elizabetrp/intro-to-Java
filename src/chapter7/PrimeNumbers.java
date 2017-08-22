@@ -1,12 +1,15 @@
 package chapter7;
 
+/**
+ * РќР°РїРёС€РµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РЅР°РјРёСЂР° РІСЃРёС‡РєРё РїСЂРѕСЃС‚Рё С‡РёСЃР»Р° РІ РґРёР°РїР°Р·РѕРЅР° [1..10 000 000]
+ */
 public class PrimeNumbers {
-//	Напишете програма, която намира всички прости числа в диапазона
-//	[1..10 000 000].
+
 	public static void main(String[] args){
 		int[] primes = new int[999];
 		int length = primes.length;
-		
+
+		//You can do this with 2 loops
 		for(int i = 2, j = 0; i <= 1000; i++, j++){
 			primes[j] = i;
 		}

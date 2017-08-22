@@ -1,11 +1,15 @@
 package chapter7;
 
+/**
+ * ĞĞ°Ğ¿Ğ¸ÑˆĞµÑ‚Ğµ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ°, ĞºĞ¾ÑÑ‚Ğ¾ Ğ½Ğ°Ğ¼Ğ¸Ñ€Ğ° Ğ½Ğ°Ğ¹-Ñ‡ĞµÑÑ‚Ğ¾ ÑÑ€ĞµÑ‰Ğ°Ğ½Ğ¸Ñ ĞµĞ»ĞµĞ¼ĞµĞ½Ñ‚ Ğ² Ğ¼Ğ°ÑĞ¸Ğ².
+ * ĞŸÑ€Ğ¸Ğ¼ĞµÑ€: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} -> 4 (5 Ğ¿ÑŠÑ‚Ğ¸).
+ */
 public class MostPopularElement {
-//	Íàïèøåòå ïğîãğàìà, êîÿòî íàìèğà íàé-÷åñòî ñğåùàíèÿ åëåìåíò â ìàñèâ.
-//	Ïğèìåğ: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} -> 4 (5 ïúòè).
+
 	public static void main(String[] args){
-		
-		int[] numbers = {1, 3, 1, 3, 3, 4, 2, 3, 2, 2, 3};
+
+		//what if they are 2 numbers which are most commonly met
+		int[] numbers = {1, 3, 1, 3, 3, 4, 2, 3, 2, 2, 2};
         int length = numbers.length;
 		int popular = numbers[0];
 		int count = 1, tempCount = 0;

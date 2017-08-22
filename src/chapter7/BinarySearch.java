@@ -1,18 +1,21 @@
 package chapter7;
 
 public class BinarySearch {
-//	Да се реализира двоично търсене (binary search) в сортиран
-//	целочислен масив.
 
+	//I think this is not working
 	public static void main(String[] args){
 		int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
-		
+
 		int length = primes.length;
 		int min = 0;
 		int max = length - 1;
-		int guess = 68;
+		int guess = 23;
 		int mid = 0;
-		
+
+		//This should end whenever min is bigger than max.
+		// Do not iterate with for loop, think of an alternative,
+		// which will end the loop when it finds the result.
+		//Extract it in function
 		for(int i = 0; i < length; i++){
 			mid = (max + min) / 2;
 			if(primes[mid] == guess){

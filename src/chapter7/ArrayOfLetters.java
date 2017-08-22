@@ -3,10 +3,7 @@ package chapter7;
 import java.util.Scanner;
 
 public class ArrayOfLetters {
-//	Да се напише програма, която създава масив с всички букви от
-//	латинската азбука. Да се даде възможност на потребител да въвежда
-//	дума от конзолата и в резултат да се извеждат индексите на буквите от
-//	думата.
+
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 		
