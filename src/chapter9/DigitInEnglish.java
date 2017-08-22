@@ -1,5 +1,9 @@
 package chapter9;
 
+/**
+ * Напишете метод, който връща английското наименование на последната
+ * цифра от дадено число. Примери: за числото 512 отпечатва "two"; за числото 1024 – "four".
+ */
 public class DigitInEnglish {
 	public static String getDigitName(int number){
 		String digitName = "";
@@ -46,10 +50,6 @@ public class DigitInEnglish {
 		String name = getDigitName(lastDigit);
 		return name;
 	}
-	
-//	�������� �����, ����� ����� ����������� ������������ �� ����������
-//	����� �� ������ �����. �������: �� ������� 512 ��������� "two"; ��
-//	������� 1024 � "four".
 	
 	public static void main(String[] args){
 		System.out.println(getDigit(6841));

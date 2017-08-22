@@ -1,27 +1,30 @@
 package chapter9;
 
+//	РќР°РїРёС€РµС‚Рµ РјРµС‚РѕРґ, РєРѕР№С‚Рѕ РІСЂСЉС‰Р° РїРѕР·РёС†РёСЏС‚Р° РЅР° РїСЉСЂРІРёСЏ РµР»РµРјРµРЅС‚ РЅР° РјР°СЃРёРІ,
+//	РєРѕР№С‚Рѕ Рµ РїРѕ-РіРѕР»СЏРј РѕС‚ РґРІР°С‚Р° СЃРІРѕРё СЃСЉСЃРµРґРё РµРґРЅРѕРІСЂРµРјРµРЅРЅРѕ, РёР»Рё -1, Р°РєРѕ РЅСЏРјР°
+//	С‚Р°РєСЉРІ РµР»РµРјРµРЅС‚.
 public class FirstBiggerElement {
-	
+
+    //You shouldn't use varags when you know you need an array
 	public static int getPosition(int... array){
 		int position = 0;
 		for(int i = 1; i < array.length - 1; i++){
 			if(array[i] > array[i - 1] && array[i] > array[i + 1]){
+			    // you can do 'return i'
 				position = i;
 				break;
-			}else{
+			}//remove the else
+			else{
 				position = -1;
 			}
 		}
+		//return -1, no need of position variable
 		return position;
 	}
-	
-//	Напишете метод, който връща позицията на първия елемент на масив,
-//	който е по-голям от двата свои съседи едновременно, или -1, ако няма
-//	такъв елемент.
 
-	
 	public static void main(String[] args) {
-		int position = getPosition(1, 1, 5, 2, 2, 6, 3);
+	    //This should return -1
+		int position = getPosition();
 		System.out.println(position);
 	}
 

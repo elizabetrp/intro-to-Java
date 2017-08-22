@@ -3,6 +3,7 @@ package chapter10;
 import java.util.Scanner;
 
 public class SumN {
+	//Name is not proper. When you have is/are/has this means the method should return a boolean
 	public static void isSumN(int[] arr, int sum){
 		for(int i = 0; i < arr.length; i++){
 			int first = arr[i];
@@ -14,10 +15,11 @@ public class SumN {
 			}
 		}
 	}
+	//Never use this in your code
 	public int value;
 	
-//	Äàäåí å ìàñèâ ñ öåëè ÷èñëà è ÷èñëî N. Íàïèøåòå ïðîãðàìà, êîÿòî
-//	íàìèðà âñè÷êè ïîäìíîæåñòâà îò ÷èñëà îò ìàñèâà, êîèòî èìàò ñóìà N
+//	Ð”Ð°Ð´ÐµÐ½ Ðµ Ð¼Ð°ÑÐ¸Ð² Ñ Ñ†ÐµÐ»Ð¸ Ñ‡Ð¸ÑÐ»Ð° Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ N. ÐÐ°Ð¿Ð¸ÑˆÐµÑ‚Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð°, ÐºÐ¾ÑÑ‚Ð¾
+//	Ð½Ð°Ð¼Ð¸Ñ€Ð° Ð²ÑÐ¸Ñ‡ÐºÐ¸ Ð¿Ð¾Ð´Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²Ð° Ð¾Ñ‚ Ñ‡Ð¸ÑÐ»Ð° Ð¾Ñ‚ Ð¼Ð°ÑÐ¸Ð²Ð°, ÐºÐ¾Ð¸Ñ‚Ð¾ Ð¸Ð¼Ð°Ñ‚ ÑÑƒÐ¼Ð° N
 	
 	public static void main(String[] args){
 		
