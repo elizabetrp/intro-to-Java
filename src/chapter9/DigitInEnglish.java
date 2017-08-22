@@ -1,5 +1,9 @@
 package chapter9;
 
+/**
+ * РќР°РїРёС€РµС‚Рµ РјРµС‚РѕРґ, РєРѕР№С‚Рѕ РІСЂСЉС‰Р° Р°РЅРіР»РёР№СЃРєРѕС‚Рѕ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РЅР° РїРѕСЃР»РµРґРЅР°С‚Р°
+ * С†РёС„СЂР° РѕС‚ РґР°РґРµРЅРѕ С‡РёСЃР»Рѕ. РџСЂРёРјРµСЂРё: Р·Р° С‡РёСЃР»РѕС‚Рѕ 512 РѕС‚РїРµС‡Р°С‚РІР° "two"; Р·Р° С‡РёСЃР»РѕС‚Рѕ 1024 вЂ“ "four".
+ */
 public class DigitInEnglish {
 	public static String getDigitName(int number){
 		String digitName = "";
@@ -46,10 +50,6 @@ public class DigitInEnglish {
 		String name = getDigitName(lastDigit);
 		return name;
 	}
-	
-//	Напишете метод, който връща английското наименование на последната
-//	цифра от дадено число. Примери: за числото 512 отпечатва "two"; за
-//	числото 1024 – "four".
 	
 	public static void main(String[] args){
 		System.out.println(getDigit(6841));

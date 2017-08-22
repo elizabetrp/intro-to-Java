@@ -2,16 +2,21 @@ package chapter7;
 
 import java.util.Arrays;
 
+/**
+ * ĞĞ°Ğ¿Ğ¸ÑˆĞµÑ‚Ğµ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ°, ĞºĞ¾ÑÑ‚Ğ¾ Ğ½Ğ°Ğ¼Ğ¸Ñ€Ğ° Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»Ğ½Ğ°Ñ‚Ğ° Ñ€ĞµĞ´Ğ¸Ñ†Ğ° Ğ¾Ñ‚ Ğ½Ğ°Ñ€Ğ°ÑÑ‚Ğ²Ğ°Ñ‰Ğ¸ ĞµĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¸ Ğ² Ğ¼Ğ°ÑĞ¸Ğ².
+ * ĞŸÑ€Ğ¸Ğ¼ĞµÑ€: {3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.
+ */
 public class MaxIncreasingElements {
-//	Íàïèøåòå ïğîãğàìà, êîÿòî íàìèğà ìàêñèìàëíàòà ğåäèöà îò íàğàñòâàùè
-//	åëåìåíòè â ìàñèâ. Ïğèìåğ: {3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.
 	public static void main(String[] args){
-		int[] numbers = {3, 2, 3, 4, 5, 4, 3, 4, 5, 6, 7, 8, 1, 4};
+		//I changed this
+		int[] numbers = {3, 2, 3, 4, 5, 4, 3, 4, 5, 6, 7, 8, 1, 4, 5, 6, 7, 8};
         int length = numbers.length;
         int count = 0;
         int[] temp = new int[length];
         
         for (int i = 0; i < length - 1; i++){
+        	//Again logic broken when the result is in the end
+			//You can combine if and while here
         	if(numbers[i + 1] - numbers[i] == 1){
         		count = 1;
         		while(numbers[i + 1] - numbers[i] == 1){

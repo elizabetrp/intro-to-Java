@@ -1,9 +1,12 @@
 package chapter7;
 
+
+/**
+ * LexicographicCompare.java Р”Р° СЃРµ РЅР°РїРёС€Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ СЃСЂР°РІРЅСЏРІР° РґРІР° РјР°СЃРёРІР° РѕС‚ С‚РёРї char Р»РµРєСЃРёРєРѕРіСЂР°С„СЃРєРё (Р±СѓРєРІР° РїРѕ Р±СѓРєРІР°)
+ * Рё РїСЂРѕРІРµСЂСЏРІР° РєРѕР№ РѕС‚ РґРІР°С‚Р° Рµ РїРѕ-СЂР°РЅРѕ РІ Р»РµРєСЃРёРєРѕРіСЂР°С„СЃРєР°С‚Р° РїРѕРґСЂРµРґР±Р°.
+ */
 public class LexicographicCompare {
-//	Да се напише програма, която сравнява два масива от тип char
-//	лексикографски (буква по буква) и проверява кой от двата е по-рано в
-//	лексикографската подредба.
+
 	public static void main(String[] args){
 		char[] one = {'z', 'a', 'k'};
 		char[] two = {'z', 'a', 'f'};
@@ -11,11 +14,15 @@ public class LexicographicCompare {
 		boolean compare = true;
 		
 		for(int i = 0; i < one.length; i++){
+			// no need to cast them to int
 			if((int) one[i] > (int) two[i]){
+				//You can print the result here and terminate the program.
+				//If not terminated in the end you can say for sure that the
+				// second one is bigger that the first one and you will not need the compare variable
 				compare = false;
 			}
 		}
-		
+
 		System.out.println("The first array comes earlier than the second one? " + compare);
 	}
 }

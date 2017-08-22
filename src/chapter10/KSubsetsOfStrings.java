@@ -2,6 +2,14 @@ package chapter10;
 
 import java.util.Scanner;
 
+//	РќРµРєР° Рµ РґР°РґРµРЅРѕ РјРЅРѕР¶РµСЃС‚РІРѕ РѕС‚ СЃРёРјРІРѕР»РЅРё РЅРёР·РѕРІРµ. Р”Р° СЃРµ РЅР°РїРёС€Рµ РїСЂРѕРіСЂР°РјР°,
+//	РєРѕСЏС‚Рѕ РіРµРЅРµСЂРёСЂР° РІСЃРёС‡РєРё РїРѕРґРјРЅРѕР¶РµСЃС‚РІР° СЃСЉСЃС‚Р°РІРµРЅРѕ РѕС‚ k РЅР° Р±СЂРѕР№ СЃРёРјРІРѕР»РЅРё
+//	РЅРёР·Р°, РёР·Р±СЂР°РЅРё РёР·РјРµР¶РґСѓ РµР»РµРјРµРЅС‚РёС‚Рµ РЅР° С‚РѕРІР° РјРЅРѕР¶РµСЃС‚РІРѕ.
+//	РџСЂРёРјРµСЂРµРЅ РІС…РѕРґ:
+//	strings = {'test', 'rock', 'fun'}
+//	k = 2
+//	РџСЂРёРјРµСЂРµРЅ РёР·С…РѕРґ:
+//	(test rock), (test fun), (rock fun)
 public class KSubsetsOfStrings {
 	static String[] words;
 	public static void printCombinations(int[] arr, int index, int start, int end){
@@ -22,16 +30,6 @@ public class KSubsetsOfStrings {
 			}
 		}
 	}
-	
-//	Нека е дадено множество от символни низове. Да се напише програма,
-//	която генерира всички подмножества съставено от k на брой символни
-//	низа, избрани измежду елементите на това множество.
-//	Примерен вход:
-//	strings = {'test', 'rock', 'fun'}
-//	k = 2
-//	Примерен изход:
-//	(test rock), (test fun), (rock fun)
-
 	
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);

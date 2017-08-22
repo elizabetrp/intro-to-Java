@@ -2,11 +2,12 @@ package chapter7;
 
 import java.util.Scanner;
 
+/**
+ * РќР°РїРёС€РµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ СЃСЉР·РґР°РІР° СЃР»РµРґРЅРёС‚Рµ РєРІР°РґСЂР°С‚РЅРё РјР°С‚СЂРёС†Рё Рё РіРё РёР·РІРµР¶РґР° РЅР° РєРѕРЅР·РѕР»Р°С‚Р° РІСЉРІ С„РѕСЂРјР°С‚РёСЂР°РЅ РІРёРґ.
+ * Р Р°Р·РјРµСЂСЉС‚ РЅР° РјР°С‚СЂРёС†РёС‚Рµ СЃРµ РІСЉРІРµР¶РґР° РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р°. //РЅРµ Рµ С†СЏР»Р°
+ */
 public class QuadraticMatrix {
-//	Напишете програма, която създава следните квадратни матрици и ги
-//	извежда на конзолата във форматиран вид. Размерът на матриците се
-//	въвежда от конзолата.
-	
+
 //	unfinished
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
@@ -19,7 +20,9 @@ public class QuadraticMatrix {
 		}while(n <= 0);
 		
 		int sqrtN = n * n;
-		
+
+		//Do it with two dimensional arrays
+		//Extract each matrix in method
 		//Matrix 1
 		System.out.println("Matrix 1\n");
 		
