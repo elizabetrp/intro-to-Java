@@ -7,7 +7,7 @@ public class Cat {
 	public String color;
 
 	public String getName() {
-	return this.name;
+		return this.name;
 	}
 
 	public void setName(String name) {

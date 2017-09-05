@@ -4,19 +4,21 @@ import java.util.Scanner;
 
 public class SumN {
 	//Name is not proper. When you have is/are/has this means the method should return a boolean
-	public static void isSumN(int[] arr, int sum){
+	public static void getSum(int[] arr, int sum){
 		for(int i = 0; i < arr.length; i++){
 			int first = arr[i];
 			for(int j = i + 1; j < arr.length; j++){
 				int second = arr[j];
 				if((first + second) == sum){
 					System.out.printf("(%d, %d) ", first, second);
+				}else{
+					System.out.println("0 matches were found.");
 				}
 			}
 		}
 	}
 	//Never use this in your code
-	public int value;
+	int value;
 	
 //	Даден е масив с цели числа и число N. Напишете програма, която
 //	намира всички подмножества от числа от масива, които имат сума N
@@ -39,7 +41,7 @@ public class SumN {
 			array[i] = scan.nextInt();
 		}
 		
-		isSumN(array, sum);
+		getSum(array, sum);
 		
 		scan.close();
 	}

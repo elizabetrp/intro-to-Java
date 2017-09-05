@@ -6,15 +6,14 @@ public class MergeSort {
     private int length;
  
 
-    public static void main(String a[]){
+    public static void main(String args[]){
          
         int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
         MergeSort ms = new MergeSort();
         ms.sort(inputArr);
         for(int i:inputArr){
             //you can do this in one line
-            System.out.print(i);
-            System.out.print(" ");
+            System.out.print(i + " ");
         }
     }
      

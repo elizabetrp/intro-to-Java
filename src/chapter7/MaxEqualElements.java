@@ -10,7 +10,7 @@ public class MaxEqualElements {
 
 	public static void main(String[] args){
 		// I changed it
-		int[] numbers = {1, 2, 2, 3, 4, 5, 2, 2, 2, 2};
+		int[] numbers = {1, 3, 3, 3, 4, 5, 2, 2, 3, 1};
         int length = numbers.length;
         int max = 0;
         int count = 0;

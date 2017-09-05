@@ -5,7 +5,7 @@ package chapter9;
 //	такъв елемент.
 public class FirstBiggerElement {
 
-    //You shouldn't use varags when you know you need an array
+    //You shouldn't use varargs when you know you need an array
 	public static int getPosition(int... array){
 		int position = 0;
 		for(int i = 1; i < array.length - 1; i++){

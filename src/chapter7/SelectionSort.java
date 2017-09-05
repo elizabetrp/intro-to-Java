@@ -7,15 +7,11 @@ import java.util.Arrays;
  * Напишете програма, която сортира масив. Да се използва алгоритъма "Selection sort".
  */
 public class SelectionSort {
-
-	public static void main(String[] args){
-		int[] array = {10, 34, 2, 56, 7, 67, 88, 42};
-		int length = array.length;
-
-		//Extract in method
-		for (int i = 0; i < length - 1; i++){
+	//Extract in method
+	public static void sort(int array[]){
+		for (int i = 0; i < array.length - 1; i++){
         	int index = i;
-            for (int j = i + 1; j < length; j++){
+            for (int j = i + 1; j < array.length; j++){
                 if (array[j] < array[index]){ 
                     index = j;
                 }
@@ -24,6 +20,13 @@ public class SelectionSort {
             array[index] = array[i];
             array[i] = smallerNumber;
         }
+	}
+	
+	public static void main(String[] args){
+		int[] array = {10, 34, 2, 56, 7, 67, 88, 42};
+
+		sort(array);
+		
 		System.out.println(Arrays.toString(array));
 	}
 }

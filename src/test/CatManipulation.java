@@ -1,5 +1,7 @@
 package test;
 
+import test.Cat;
+
 public class CatManipulation {
 	
 //	Напишете програма, която създава 10 обекта от тип Cat, дава им имена

@@ -18,8 +18,7 @@ public class MergeSort {
         ms.sort(inputArr);
         for(int i:inputArr){
             //You can make this in one print
-            System.out.print(i);
-            System.out.print(" ");
+            System.out.print(i + " ");
         }
     }
      

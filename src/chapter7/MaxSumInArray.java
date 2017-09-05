@@ -9,44 +9,43 @@ import java.util.Scanner;
  */
 public class MaxSumInArray {
 
-		public static void main(String[] args){
+	//Extract this in method
+	private static void swapElements(double[] arr){
+		int length = arr.length;
+		for(int i = 0; i < arr.length - 1; i++){
+			for(int j = i + 1; j < length; j++){
+				if(arr[i] > arr[j]){
+					double tempEl = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tempEl;
+				}
+			}
+		}
+	}
+	
+	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
-
 		//No need to initialize n, 0 is default value of integers
-		int n = 0, k;
-		int[] array;
+		int n, k;
+		double[] array;
 		
 		do{
 			System.out.println("N = ");
 			n = scan.nextInt();
 			System.out.println("K = ");
 			k = scan.nextInt();
-			array = new int[n];
+			array = new double[n];
 		}while(n < k);
 		
-		int length = array.length;
+		EqualArrays.fillArray(n, "array", array);
 		
-		for(int i1 = 0; i1 < n; i1++){
-			System.out.printf("array[%d] = ", i1);
-			array[i1] = scan.nextInt();
-		}
-
-		//Extract this in method
-		for(int i = 0; i < length - 1; i++){
-			for(int j = i + 1; j < length; j++){
-				if(array[i] > array[j]){
-					int tempEl = array[i];
-					array[i] = array[j];
-					array[j] = tempEl;
-				}
-			}
-		}
+		swapElements(array);
 		
 		System.out.println(Arrays.toString(array));
 		
 		for(int j = 0; j < k; j++){
-			int lastElement = array[length - j - 1];
-			System.out.printf("%d%n", lastElement);
+			double lastElement = array[array.length - j - 1];
+			System.out.printf("%f%n", lastElement);
 		}
 				
 		scan.close();
